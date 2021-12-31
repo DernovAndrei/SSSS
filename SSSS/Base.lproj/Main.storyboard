@@ -24,12 +24,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fox-rO-uGG">
-                                <rect key="frame" x="188" y="253" width="46" height="30"/>
+                                <rect key="frame" x="154" y="301" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedShowMyCat" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Jb-BY-0wB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -39,10 +42,14 @@
                             <constraint firstItem="Dbi-E1-6jM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m8M-Pt-SOV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="fox-rO-uGG" id="ENR-Tt-Ngg"/>
+                        <outlet property="myCat" destination="Dbi-E1-6jM" id="h4A-io-xfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="77"/>
+            <point key="canvasLocation" x="19.626168224299064" y="76.45788336933046"/>
         </scene>
     </scenes>
     <resources>
